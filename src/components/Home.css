@@ -1,0 +1,227 @@
+body{
+    background-image: url("../images//bg1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title1-transition-enter {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.title1-transition-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out;
+}
+
+.title2-transition-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.title2-transition-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out;
+}
+
+.button-transition-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.button-transition-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out;
+}
+
+.title1{
+    margin-top: 70px;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+.title2{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.quote-transition-enter {
+    opacity: 0;
+}
+
+.quote-transition-enter-active {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+
+.page-transition-enter {
+    opacity: 0;
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+
+.quote{
+    margin-top: 50px;
+    color: rgb(235, 235, 89);
+    font-size: 30px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.speaker-page{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    margin: auto auto;
+    margin-top: 150px;
+}
+
+@media screen and (max-width:800px) {
+    .title1{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .title2{
+        font-size: 30px;
+    }
+    .quote{
+        font-size: 20px;
+    }
+    .button-64{
+        top: 60px;
+    }
+    .speaker-resgistration, .indicator{
+      display: none;
+    }
+}
+
+/* Button */
+.button-64 {
+    position: fixed;
+    top: 130px;
+    left: 30px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background: none;
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .button-64:hover span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 300ms;
+  }
+  
+  @media (max-width: 800px) {
+    .button-64 {
+      top: 80px;
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+
+.speaker-resgistration h2{
+    position: fixed;
+    display: inline;
+    color: #ffd64a;
+    left: 45px;
+    top: 230px;
+}
+
+/*Indicator*/
+.indicator{
+      position:fixed;
+      margin: 230px 95px;
+      width:30px;
+      height:30px;
+      
+      transform:rotate(45deg);
+      span{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        box-sizing:border-box;
+        border:none;
+        border-bottom:3px solid #fff;
+        border-right:3px solid #fff;
+        animation:animate 1s linear infinite;
+        &:nth-child(1){
+          top:-30px;
+          left:-30px;
+          animation-delay:0s;
+        }
+        &:nth-child(2){
+          top:-15px;
+          left:-15px;
+          animation-delay:0.2s;
+        }
+        &:nth-child(3){
+          top:0;
+          left:0;
+          animation-delay:0.4s;
+        }
+        &:nth-child(4){
+          top:15px;
+          left:15px;
+          animation-delay:0.6s;
+        }
+        &:nth-child(5){
+          top:30px;
+          left:30px;
+          animation-delay:0.8s;
+        }
+      }
+    }
+
+  @keyframes animate{
+    0%{
+      border-color:#fff;
+      transform:translate(0,0);
+    }
+     20%{
+      border-color:#fff;
+       transform:translate(15px,15px);
+    }
+     20.1%,100%{
+      border-color:#ffd64a;
+    }
+  }

@@ -1,0 +1,119 @@
+.nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(3, 5, 42);
+    padding-top: 5px;
+    z-index: 2;
+}
+
+.navlinks{
+    float: right;
+    padding-top: 15px;
+    width: 60%;
+}
+
+.link{
+    margin: 0px 3%;
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: rgb(232, 232, 127);
+}
+
+.logo{
+    height: 65px;
+    top: 7px;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+.drawer{
+    display: none;
+    z-index: 1;
+}
+
+@media screen and (max-width:800px) {
+    .link{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .link{
+        font-size: 0px;
+    }
+
+    .menu{
+        display: inline;
+        position: absolute;;
+        right: 30px;
+        top: 20px;
+    }
+
+    .menu-x{
+        display: inline;
+        position: absolute;;
+        right: 33px;
+        top: 22px;
+        height: 25px;
+    }
+
+    .menu:active{
+        background-color: rgb(17, 1, 72);
+    }
+
+    .drawer{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(171, 171, 171);
+        height: fit-content;
+        padding: 10px;
+        width: 150px;
+        position: absolute;
+        right: 0px;
+        top: 58px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .drawer_link{
+        text-decoration: none;
+        color: rgb(17, 1, 72);
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px;
+    }
+
+    .drawer-transition-enter {
+        transform: translateY(-120%);
+        z-index: -1;
+    }
+    
+    .drawer-transition-enter-active {
+        transform: translateX(0);
+        transition: transform 1000ms;
+    }
+
+    .drawer-transition-exit {
+        transform: translateY(0);
+        z-index: -1;
+    }
+    
+    .drawer-transition-exit-active {
+        transform: translateY(-120%);
+        transition: transform 1000ms;
+    }
+
+    .drawer button{
+        margin: auto auto;
+        width: 30px;
+    }
+}
