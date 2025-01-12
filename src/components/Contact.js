@@ -39,7 +39,7 @@ function Contact() {
               <a href="https://www.instagram.com/csi_mcoe?igsh=Mjl0emNweGRyNWx6"><img src={insta} alt="instagram"/></a>
               <a href="https://www.linkedin.com/in/csi-pesmcoe-ba53952b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img src={linkedin} alt="linkedin"></img></a> 
               <a href="mailto:csi_comp@moderncoe.edu.in"><FontAwesomeIcon className="fa-mail" icon={faEnvelope} /></a>
-              <button className="button-60" role="button" onClick={handleClick}><span className="text">Support Us!</span></button>
+              <button className="button-60" onClick={handleClick}><span className="text">Support Us!</span></button>
             </div>
             <hr className="horizontal-line"/>
             <div className="quick-links">

@@ -40,7 +40,7 @@ function About() {
                  training, seminars, workshops and counseling sessions to make them employable.</p>
             </div>
             <div class="logo2">
-              <img src={clg} alt="College Image"/>
+              <img src={clg} alt="College"/>
             </div>
           </section>
       </div>

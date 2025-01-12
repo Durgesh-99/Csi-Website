@@ -25,7 +25,7 @@ const Navbar = ()=>{
                 <Link to="/contact" className="link">Contact Us</Link>
             </div>
 
-            <img className={showDrawer?'menu-x':'menu'} src={showDrawer?X:menu} onClick={()=>setShowDrawer(!showDrawer)}/>
+            <img className={showDrawer?'menu-x':'menu'} src={showDrawer?X:menu} alt="menu" onClick={()=>setShowDrawer(!showDrawer)}/>
 
             <CSSTransition
                 in={showDrawer}

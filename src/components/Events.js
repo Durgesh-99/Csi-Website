@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import i1 from "../images/i1.jpg";
 import i2 from "../images/i2.jpg";
 import i3 from "../images/i3.JPG";
@@ -10,13 +10,6 @@ import l4 from "../images/l4.png";
 import './Events.css';
 
 function Events() {
-  const [showTitle, setShowTitle] = useState(false);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowTitle(!showTitle)
-    }, 2000);
-    return () => clearTimeout(timeout);
-  }, [])
 
   const eventData = [
     {
@@ -87,7 +80,7 @@ function Events() {
 
   return (
     <div className='.Events'>
-        <button class="button-64" role="button" onClick={handleClick}><span className="text">Support Us!</span></button>
+        <button class="button-64" onClick={handleClick}><span className="text">Support Us!</span></button>
         <h1 className="main">EVENTS</h1>
             <div className="events-grid">
               {eventData.map((event) => (
