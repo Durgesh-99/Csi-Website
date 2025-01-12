@@ -80,7 +80,7 @@ function Events() {
 
   return (
     <div className='.Events'>
-        <button class="button-64" onClick={handleClick}><span className="text">Support Us!</span></button>
+        <button className="button-64" onClick={handleClick}><span className="text">Support Us!</span></button>
         <h1 className="main">EVENTS</h1>
             <div className="events-grid">
               {eventData.map((event) => (
