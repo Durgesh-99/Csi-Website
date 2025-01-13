@@ -49,7 +49,6 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="cover">
         <button
           className={`button-64 ${showQuote ? "button-transition-enter-active" : "button-transition-enter"}`}
           onClick={handleClick}
@@ -92,7 +91,6 @@ function Home() {
                   <img
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    style={{ width: "100%", borderRadius: "10px", height:"400px" }}
                   />
                 </div>
               ))}
@@ -114,10 +112,8 @@ function Home() {
                 display: 'block', // Helps with centering
                 backgroundColor: '#ffffff' // Optional: adds a white background
               }}
-              allowTransparency={true}
             />
         </div>
-      </div>
     </div>
   );
 }

@@ -162,6 +162,12 @@
       min-width: 80px;
       z-index: 1;
     }
+    .button-64:hover span {
+      background-color: rgb(5, 6, 45);
+      padding: 0px;
+      border-radius: 2px;
+      transition: 300ms;
+    }
     .button-64 span{
       padding: 0px;
       font-size: small;
@@ -188,4 +194,15 @@
     .main{
       font-size: 26px;
     }
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .event-info h2{
+    font-size: 12px;
+    margin: 8px 5px 5px 10px;
+  }
+  .event-info p{
+    font-size: 9px;
+    margin: 5px 5px 5px 10px;
+  }
 }
