@@ -148,6 +148,12 @@ body{
     border-radius: 6px;
     transition: 300ms;
   }
+
+  .slideshow{
+    width: 40%;
+    margin: 30px auto;
+    height: 500px
+  }
   
   @media (max-width: 800px) {
     .button-64 {
@@ -155,7 +161,21 @@ body{
       font-size: 24px;
       min-width: 196px;
     }
+    .slideshow{
+      width: 90%;
+    }
   }
+  @media (max-width: 1200px) and (min-width: 800px) {
+    .button-64 {
+      top: 80px;
+      font-size: 24px;
+      min-width: 196px;
+    }
+    .slideshow {
+      width: 70%;
+    }
+  }
+  
 
 .speaker-resgistration h2{
     position: fixed;
