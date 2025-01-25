@@ -76,7 +76,7 @@ function Events() {
     }
   ];
 
-  const handleClick = () => { window.location.href = "https://rzp.io/l/31bBIMJ"; };
+  const handleClick = () => { window.location.href = "https://pages.razorpay.com/csi-pesmcoe"; };
 
   return (
     <div className='.Events'>

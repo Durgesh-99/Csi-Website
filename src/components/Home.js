@@ -31,7 +31,7 @@ function Home() {
   }, []);
 
   const handleClick = () => {
-    window.location.href = "https://rzp.io/l/31bBIMJ";
+    window.location.href = "https://pages.razorpay.com/csi-pesmcoe";
   };
 
   const settings = {
